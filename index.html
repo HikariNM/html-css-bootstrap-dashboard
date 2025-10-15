@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
         integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -54,7 +55,7 @@
 
                 <div class="row">
                     <div class="col-12 col-lg-8 my-2">
-                        <div class="d-flex col-12 col-lg-8 justify-content-between">
+                        <div class="d-flex justify-content-between align-items-center">
                             <h2>Catalogo Libri</h2>
                             <button type="button" class="btn btn-primary">Aggiungi Libro</button>
                         </div>
@@ -62,7 +63,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Titolo</th>
-                                    <th scope="col">Data Prestito</th>
+                                    <th scope="col" class="d-none d-md-block">Data Prestito</th>
                                     <th scope="col">Stato</th>
                                     <th scope="col">Azioni</th>
                                 </tr>
@@ -70,21 +71,35 @@
                             <tbody>
                                 <tr>
                                     <td scope="row">I pilastri della terra</td>
-                                    <td>-</td>
-                                    <td>Disponibile</td>
-                                    <td>@</td>
+                                    <td  class="d-none d-md-block">-</td>
+                                    <td>
+                                        <span class="badge text-bg-success">Disponibile</span>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-pencil"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">I pilastri della terra</td>
-                                    <td>-</td>
-                                    <td>Disponibile</td>
-                                    <td>@</td>
+                                    <td scope="row">I promessi sposi</td>
+                                    <td class="d-none d-md-block">-</td>
+                                    <td><span class="badge text-bg-success">Disponibile</span></td>
+                                    <td><i class="fa-solid fa-pencil"></i>
+                                        <i class="fa-solid fa-trash"></i></td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">I pilastri della terra</td>
-                                    <td>-</td>
-                                    <td>Disponibile</td>
-                                    <td>@</td>
+                                    <td scope="row">Il signore degli anello</td>
+                                    <td class="d-none d-md-block">18/10/2023</td>
+                                    <td><span class="badge text-bg-warning text-light">In Prestito</span></td>
+                                    <td><i class="fa-solid fa-pencil"></i>
+                                        <i class="fa-solid fa-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Il codice Da Vinci</td>
+                                    <td class="d-none d-md-block">-</td>
+                                    <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                    <td><i class="fa-solid fa-pencil"></i>
+                                        <i class="fa-solid fa-trash"></i></td>
                                 </tr>
 
                             </tbody>
