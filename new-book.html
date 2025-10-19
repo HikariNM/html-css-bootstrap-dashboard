@@ -51,11 +51,9 @@
         <div class="container">
             <form action="">
                 <div class="row">
-
                     <div class="my-3">
                         <h2>Nuovo Libro</h2>
                     </div>
-
                     <div class="mb-3 col-6">
                         <label for="AuthorName" class="form-label">Nome Autore</label>
                         <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore"
@@ -66,22 +64,17 @@
                         <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore"
                             aria-label="AuthorLastName" aria-describedby="basic-addon1">
                     </div>
-
                 </div>
-
                 <div class="row mb-3">
 
                     <div class="col-12">
                         <label for="BookTitle" class="form-label">Titolo</label>
                         <input type="text" class="form-control" placeholder="Inserisci il titolo del libro"
-                            aria-label="Username" aria-describedby="basic-addon1">
+                            aria-label="BookTitle" aria-describedby="basic-addon1">
                         <div class="form-text" id="basic-addon4">Titolo versione italiana</div>
                     </div>
-
                 </div>
-
-                <div class="row row-cols-12 row-cols-md-3 my-3">
-
+                <div class="row row-cols-1 row-cols-md-3 my-3">
                     <div class="mb-3">
                         <label for="BookGenre" class="form-label">Genere</label>
                         <select id="BookGenre" class="form-select">
@@ -93,8 +86,8 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="text" class="form-label">Anno di Pubblicazione</label>
-                        <input type="text" class="form-control" placeholder="Inserisci l'anno'" aria-label="Username"
+                        <label for="publishYear" class="form-label">Anno di Pubblicazione</label>
+                        <input type="text" class="form-control" placeholder="Inserisci l'anno" aria-label="publishYear"
                         aria-describedby="basic-addon1">
                     </div>
                     
@@ -104,13 +97,10 @@
                         aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
-
                 <hr>
-
                 <div class="row gy-3">
-
                     <div class="col-12">
-                        <label for="Note" class="form-label">Note</label>
+                        <label for="note" class="form-label">Note</label>
                         <div class="form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                             <label for="floatingTextarea">Inserisci eventuali note sul libro</label>
@@ -119,18 +109,13 @@
                     <div class="col-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                            <label class="form-check-label" for="checkDefault">
-                              Disponibile anche in digitale
-                            </label>
+                            <label class="form-check-label" for="checkDefault">Disponibile anche in digitale</label>
                           </div>
                     </div>
-
                 </div>
-
                 <div class="my-3">
                     <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
                 </div>
-
             </form>
         </div>
     </main>
